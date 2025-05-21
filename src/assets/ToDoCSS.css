@@ -40,7 +40,8 @@ body {
 }
 
 .To-do-List button {
-  padding: 10px 15px;
+  width: 120px;
+  padding: 10px;
   margin-left: 10px;
   background-color: #fcbf49;
   color: white;
@@ -49,6 +50,8 @@ body {
   cursor: pointer;
   font-weight: bold;
   transition: background-color 0.3s;
+  font-size: 0.95rem;
+  text-align: center;
 }
 
 .To-do-List button:hover {
@@ -83,8 +86,13 @@ li {
 }
 
 li button {
-  margin: 5px 5px 0 0;
+  width: 120px;
+  padding: 10px;
+  font-size: 0.9rem;
   border-radius: 8px;
+  margin: 5px;
+  text-align: center;
+  white-space: nowrap;
 }
 
 button.delete {
@@ -141,7 +149,6 @@ button.move-down:hover {
   li button {
     width: 100%;
     font-size: 0.9rem;
-    padding: 8px;
+    padding: 10px;
   }
 }
-
