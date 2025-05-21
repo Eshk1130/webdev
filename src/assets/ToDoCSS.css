@@ -1,0 +1,147 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #fdf6f0;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+  padding-top: 40px;
+}
+
+.To-do-List {
+  background-color: #ffffff;
+  border-radius: 20px;
+  padding: 30px 40px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 90%;
+  max-width: 500px;
+}
+
+.To-do-List h1 {
+  margin-bottom: 20px;
+  color: #374151;
+}
+
+.To-do-List input[type="text"] {
+  padding: 10px 15px;
+  width: 65%;
+  border: 2px solid #e0e0e0;
+  border-radius: 10px;
+  font-size: 1rem;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+.To-do-List input[type="text"]:focus {
+  border-color: #fcbf49;
+}
+
+.To-do-List button {
+  padding: 10px 15px;
+  margin-left: 10px;
+  background-color: #fcbf49;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.To-do-List button:hover {
+  background-color: #f77f00;
+}
+
+ol {
+  margin-top: 30px;
+  padding-left: 20px;
+  width: 90%;
+  max-width: 600px;
+}
+
+li {
+  background: #ffffff;
+  margin-bottom: 15px;
+  padding: 15px;
+  border-radius: 15px;
+  list-style: decimal;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  flex-wrap: wrap;
+}
+
+.text {
+  flex: 1 1 100%;
+  margin-bottom: 10px;
+  font-size: 1.1rem;
+  color: #333;
+}
+
+li button {
+  margin: 5px 5px 0 0;
+  border-radius: 8px;
+}
+
+button.delete {
+  background-color: #ef476f;
+}
+button.delete:hover {
+  background-color: #d90429;
+}
+
+button.move-up {
+  background-color: #06d6a0;
+}
+button.move-up:hover {
+  background-color: #059669;
+}
+
+button.move-down {
+  background-color: #118ab2;
+}
+button.move-down:hover {
+  background-color: #0b486b;
+}
+
+@media (max-width: 768px) {
+  .To-do-List {
+    padding: 20px;
+  }
+
+  .To-do-List h1 {
+    font-size: 1.5rem;
+  }
+
+  .To-do-List input[type="text"] {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .To-do-List button {
+    width: 100%;
+    margin-left: 0;
+    margin-top: 10px;
+  }
+
+  li {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px;
+  }
+
+  .text {
+    font-size: 1rem;
+  }
+
+  li button {
+    width: 100%;
+    font-size: 0.9rem;
+    padding: 8px;
+  }
+}
+
